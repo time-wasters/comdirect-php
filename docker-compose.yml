@@ -1,0 +1,10 @@
+services:
+  app:
+    image: comdirect-php
+    build: .
+    ports:
+      - "80:80"
+    volumes:
+      - type: bind
+        source: ./src
+        target: /var/www/comdirect-php/latest
